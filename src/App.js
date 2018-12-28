@@ -18,9 +18,12 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+            go & fck yslf!
           </a>
         </header>
+          < div className ="jumbotron" > test </div>
       </div>
+
     );
   }
 }

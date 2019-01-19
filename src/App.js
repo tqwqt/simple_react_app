@@ -1,31 +1,59 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'react-bootstrap';
 import {Navbar} from 'react-bootstrap/lib'
+import NavbarComponent from './components/Header/NavbarComponent'
+
 class App extends Component {
 
   render() {
     return (
-      <Navbar inverse>
-          <Navbar.Header>
-              <Navbar.Brand>
-                  <a href="#home">HackDesign</a>
-              </Navbar.Brand>
-              <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-              <Navbar.Text>
-                  <Navbar.Link href="#">Главная</Navbar.Link>
-              </Navbar.Text>
-              <Navbar.Text>
-                  <Navbar.Link href="#">О себе</Navbar.Link>
-              </Navbar.Text>
-              <Navbar.Text>
-                  <Navbar.Link href="#" >Обратная связь</Navbar.Link>
-              </Navbar.Text>
-          </Navbar.Collapse>
-      </Navbar>
+    	<div>
+	        <NavbarComponent/>
+		    <div className={"container"}>
+			    <form role={"form"}>
+				    <div className={"form-group"}>
+					    <label className="control-label col-md-2" htmlFor="name">Имя</label>{/*control-label is needed for grid system*/}
+					    <div className="col-md-10">
+					        <input type={"text"} className={"form-control"} id={"name"} placeholder={"Введите имя"}/>
+					        <p className="help-block">Some help</p>
+					    </div>
+				    </div>
+				    <select className="form-control">
+					    <option>1</option>
+					    <option>3</option>
+					    <option>2</option>
+				    </select>
+				    <div className="radio">
+					    <label>
+						    <input type="radio" checked/>
+						    First
+					    </label>
+				    </div>
+				    <div className="radio">
+					    <label>
+						    <input type="radio" />
+						    Second
+					    </label>
+				    </div>
+				    <div className={"form-group"}>
+					    <label className="control-label col-md-2" htmlFor="surname">Фамилия</label>
+					    <div className="col-md-10">
+					        <input type={"text"} className={"form-control"} id={"surname"} placeholder={"Введите имя"}/>
+					        <p className="help-block">Some help</p>
+					    </div>
+				    </div>
+				    <div className="checkbox">
+					    <label htmlFor="">
+					        <input type="checkbox"/>CheckBox
+					    </label>
+				    </div>
+				    <button type="button" className="btn btn-success">Отправить</button>
+			    </form>
+		    </div>
+	    </div>
+
+
 
     );
   }

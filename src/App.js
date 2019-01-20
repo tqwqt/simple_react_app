@@ -10,46 +10,16 @@ class App extends Component {
     return (
     	<div>
 	        <NavbarComponent/>
-		    <div className={"container"}>
-			    <form role={"form"}>
-				    <div className={"form-group"}>
-					    <label className="control-label col-md-2" htmlFor="name">Имя</label>{/*control-label is needed for grid system*/}
-					    <div className="col-md-10">
-					        <input type={"text"} className={"form-control"} id={"name"} placeholder={"Введите имя"}/>
-					        <p className="help-block">Some help</p>
-					    </div>
-				    </div>
-				    <select className="form-control">
-					    <option>1</option>
-					    <option>3</option>
-					    <option>2</option>
-				    </select>
-				    <div className="radio">
-					    <label>
-						    <input type="radio" checked/>
-						    First
-					    </label>
-				    </div>
-				    <div className="radio">
-					    <label>
-						    <input type="radio" />
-						    Second
-					    </label>
-				    </div>
-				    <div className={"form-group"}>
-					    <label className="control-label col-md-2" htmlFor="surname">Фамилия</label>
-					    <div className="col-md-10">
-					        <input type={"text"} className={"form-control"} id={"surname"} placeholder={"Введите имя"}/>
-					        <p className="help-block">Some help</p>
-					    </div>
-				    </div>
-				    <div className="checkbox">
-					    <label htmlFor="">
-					        <input type="checkbox"/>CheckBox
-					    </label>
-				    </div>
-				    <button type="button" className="btn btn-success">Отправить</button>
-			    </form>
+		    <div className="container-fluid">
+			    <button className={"btn btn-success"}>
+				    <i className="glyphicon glyphicon-fire" style={{color: "white", }}/>
+				    Success
+				    <span className="glyphicon glyphicon-fire" style={{color: "yellow"}}/>
+			    </button>
+			    {/*icons for i and span, badge only for span*/}
+			    <span className={"badge"} style={{fontSize: "50px"}}>22</span>
+			    <img className="img-rounded" src="https://www.imgworlds.com/wp-content/themes/IMG/img/phase3/slides/lostvalley-raptor.png">
+			    </img>
 		    </div>
 	    </div>
 
@@ -60,6 +30,46 @@ class App extends Component {
 }
 
 export default App;
+{/*<form role={"form"}>*/}
+	{/*<div className={"form-group"}>*/}
+		{/*<label className="control-label col-md-2" htmlFor="name">Имя</label>/!*control-label is needed for grid system*!/*/}
+		{/*<div className="col-md-10">*/}
+			{/*<input type={"text"} className={"form-control"} id={"name"} placeholder={"Введите имя"}/>*/}
+			{/*<p className="help-block">Some help</p>*/}
+		{/*</div>*/}
+	{/*</div>*/}
+	{/*<select className="form-control">*/}
+		{/*<option>1</option>*/}
+		{/*<option>3</option>*/}
+		{/*<option>2</option>*/}
+	{/*</select>*/}
+	{/*<div className="radio">*/}
+		{/*<label>*/}
+			{/*<input type="radio" checked/>*/}
+			{/*First*/}
+		{/*</label>*/}
+	{/*</div>*/}
+	{/*<div className="radio">*/}
+		{/*<label>*/}
+			{/*<input type="radio" />*/}
+			{/*Second*/}
+		{/*</label>*/}
+	{/*</div>*/}
+	{/*<div className={"form-group"}>*/}
+		{/*<label className="control-label col-md-2" htmlFor="surname">Фамилия</label>*/}
+		{/*<div className="col-md-10">*/}
+			{/*<input type={"text"} className={"form-control"} id={"surname"} placeholder={"Введите имя"}/>*/}
+			{/*<p className="help-block">Some help</p>*/}
+		{/*</div>*/}
+	{/*</div>*/}
+	{/*<div className="checkbox">*/}
+		{/*<label htmlFor="">*/}
+			{/*<input type="checkbox"/>CheckBox*/}
+		{/*</label>*/}
+	{/*</div>*/}
+	{/*<button type="button" className="btn btn-success">Отправить</button>*/}
+{/*</form>*/}
+//////////////////////////////
 {/*<Navbar>*/}
 {/*<Navbar.Header>*/}
 {/*<Navbar.Brand>*/}

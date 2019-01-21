@@ -1,0 +1,38 @@
+ШРИФТЫ И ИКОНКИ
+ <div className="container-fluid">
+			    <button className={"btn btn-success"}>
+				    <i className="glyphicon glyphicon-fire" style={{color: "white", }}/>
+				    Success
+				    <span className="glyphicon glyphicon-fire" style={{color: "yellow"}}/>
+			    </button>
+			    {/*icons for i and span, badge only for span*/}
+			    <span className={"badge"} style={{fontSize: "50px"}}>22</span>
+			    <img alt="img" className="img-rounded" src="https://www.imgworlds.com/wp-content/themes/IMG/img/phase3/slides/lostvalley-raptor.png">
+			    </img>
+</div>
+
+//---------------------------------------------------------
+
+ПАНЕЛЬКИ
+ <div className={"panel-group"}>
+    <div className="panel panel-default">
+        <div className="panel-heading"> Head</div>
+        <div className="panel-body">
+            Текст
+        </div>
+    </div>
+    <div className="panel panel-primary">
+        <div className="panel-heading"> Head</div>
+        <div className="panel-body">
+            Текст
+        </div>
+    </div>
+    <div className="panel panel-danger">
+        <div className="panel-heading"> Head</div>
+        <div className="panel-body">
+            Текст
+        </div>
+    </div>
+ </div>
+
+//---------------------------------------------------------

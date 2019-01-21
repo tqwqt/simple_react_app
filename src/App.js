@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Navbar} from 'react-bootstrap/lib'
 import NavbarComponent from './components/Header/NavbarComponent'
@@ -10,17 +9,23 @@ class App extends Component {
     return (
     	<div>
 	        <NavbarComponent/>
-		    <div className="container-fluid">
-			    <button className={"btn btn-success"}>
-				    <i className="glyphicon glyphicon-fire" style={{color: "white", }}/>
-				    Success
-				    <span className="glyphicon glyphicon-fire" style={{color: "yellow"}}/>
-			    </button>
-			    {/*icons for i and span, badge only for span*/}
-			    <span className={"badge"} style={{fontSize: "50px"}}>22</span>
-			    <img className="img-rounded" src="https://www.imgworlds.com/wp-content/themes/IMG/img/phase3/slides/lostvalley-raptor.png">
-			    </img>
+		    <div className="container">
+				<div className="dropdown">
+					<button className="btn btn-info dropdown-toggle" data-toggle="dropdown">
+						List<span className="caret"></span>
+					</button>
+					<ul className="dropdown-menu">
+						<li className="dropdown-header">Header 1</li>
+						<li className="disabled"><a href="#">Css</a></li>
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">JQuery</a></li>
+						<li className="divider"></li>
+						<li className="dropdown-header">Header 2</li>
+						<li><a href="#">JS</a></li>
+					</ul>
+				</div>
 		    </div>
+
 	    </div>
 
 

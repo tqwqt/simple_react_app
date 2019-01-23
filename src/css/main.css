@@ -2,24 +2,41 @@ body {
   background-color: #ffffff;
 }
 
+.owl-nav {
+  background-color: rgba(52, 58, 63, 0.71);
+}
+
+.owl-prev {
+  background: rgba(106, 110, 113, 0.67) !important;
+}
+.owl-prev:hover {
+  background-color: rgba(43, 116, 171, 0.67) !important;
+}
+
+.owl-next {
+  background-color: rgba(106, 110, 113, 0.67) !important;
+}
+.owl-next:hover {
+  background-color: rgba(43, 116, 171, 0.67) !important;
+}
+
+.h1phrase {
+  color: rgba(232, 235, 239, 0.36);
+}
 @media screen and (max-width: 500px) {
-  h1 {
+  .h1phrase {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  h1 {
+  .h1phrase {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 1500px) {
-  h1 {
+  .h1phrase {
     font-size: 100px;
   }
-}
-
-h4 {
-  color: white;
 }
 
 .p_img {

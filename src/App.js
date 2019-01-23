@@ -3,7 +3,8 @@ import './App.css';
 import {Navbar} from 'react-bootstrap/lib'
 import NavbarComponent from './components/Header/NavbarComponent'
 import OwlCarousel from 'react-owl-carousel2';
-import 'react-owl-carousel2/style.css';
+import '../node_modules/react-owl-carousel2/src/owl.carousel.css'
+import '../node_modules/react-owl-carousel2/src/owl.theme.default.css'
 
 const options = {
 	rewind: true,
@@ -42,7 +43,7 @@ class App extends Component {
 	        <NavbarComponent/>
 		    <div className="container-fluid main">
 			    <div className="row">
-					<h1 className="col ">Дизайн логотипов</h1>
+					<h1 className="col h1phrase">Дизайн логотипов</h1>
 			    </div>
 			    <OwlCarousel ref="car" options={options} events={events} >
 				    <div ><img className="p_img" src="/portfolio/pavlo.png"/></div>

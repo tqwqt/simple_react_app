@@ -1,0 +1,27 @@
+body {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+
+h4 {
+  color: white;
+}
+
+.p_img {
+  height: 500px;
+}

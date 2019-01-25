@@ -7,6 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/portfolio/wildtextures-creased-black-paper-texture.jpg") ;
+  background-clip: content-box;
+  height: 100%;
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  height: stretch;
 }
 h1{
   color: white;
@@ -21,10 +27,5 @@ code {
 .main {
   margin: 0;
   padding: 0;
-  background-image: url("/portfolio/wildtextures-creased-black-paper-texture.jpg") ;
-  background-clip: content-box;
-  height: 100%;
-  height: -moz-available;          /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  height: stretch;
+
 }

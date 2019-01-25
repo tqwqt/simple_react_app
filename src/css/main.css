@@ -42,3 +42,31 @@ body {
 .p_img {
   height: 500px;
 }
+
+.orderForm {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.orderFormDiv {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.orderLabel {
+  color: white;
+}
+
+#formHeader {
+  color: white;
+  text-align: center;
+}
+
+.orderBtn {
+  padding: 6px 25px 6px 25px;
+}
+
+.orderBtnDiv {
+  text-align: center;
+}

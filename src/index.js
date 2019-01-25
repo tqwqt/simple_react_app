@@ -4,6 +4,11 @@ import './css/index.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';//to use bs
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {createStore} from 'redux'
+import {Provider} from "react-redux"
+import allReducers from "./reducers";
+
+const store = createStore(allReducers);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

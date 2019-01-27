@@ -4,7 +4,7 @@ export default function () {
 		[
 			{
 				id: 1,
-				car: "Audi",
+				name: "Audi",
 				speed: 234.5,
 				weight: 1.4,
 				desc: "some desc",
@@ -13,7 +13,7 @@ export default function () {
 			},
 			{
 				id: 2,
-				car: "Audi2",
+				name: "Audi2",
 				speed: 200.5,
 				weight: 16.4,
 				desc: "some desc",
@@ -22,7 +22,7 @@ export default function () {
 			},
 			{
 				id: 3,
-				car: "Audi3",
+				name: "Audi3",
 				speed: 294.5,
 				weight: 6.4,
 				desc: "some desc",

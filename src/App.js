@@ -5,8 +5,7 @@ import NavbarComponent from './components/Header/NavbarComponent'
 import OwlCarousel from 'react-owl-carousel2';
 import '../node_modules/react-owl-carousel2/src/owl.carousel.css'
 import '../node_modules/react-owl-carousel2/src/owl.theme.default.css'
-import FormComponent from './components/FormComponent'
-import CarList from './components/CarLIst'
+import FormComponent from './containers/FormComponent'
 import Dojo from "./components/dojoComponent";
 import CarList from './containers/CarLIst'
 import Details from './containers/details'
@@ -61,15 +60,15 @@ class App extends Component {
 				    <div ><img className="p_img" src="/portfolio/to_israel.png"/></div>
 			    </OwlCarousel>
 			    <FormComponent/>
-			    <div style={{backgroundColor: "white"}}>
-				    <h3>Cars:</h3>
-				    <CarList/>
-				    <hr/>
-				    <h3>Details:</h3>
-				    <Details/>
+			    {/*<div style={{backgroundColor: "white"}}>*/}
+				    {/*<h3>Cars:</h3>*/}
+				    {/*<CarList/>*/}
+				    {/*<hr/>*/}
+				    {/*<h3>Details:</h3>*/}
+				    {/*<Details/>*/}
 
-			    </div>
-			    <Dojo/>
+			    {/*</div>*/}
+			    {/*<Dojo/>*/}
 		    </div>
 
 	    </div>

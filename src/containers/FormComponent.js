@@ -1,6 +1,36 @@
 import React, {Component} from 'react';
+import {createStore} from 'redux'
+
+const initialState = {count : 0};
+
+function reducer(state ={count: 0}, action) {
+	switch (action.type) {
+		case 'INCREMENT': return {count: state.count + action.amount};
+		case 'DECREMENT': return {count: state.count - action.amount};
+		case 'RESET': return {count: 0};
+		default: return state;
+	}
+}
+function increment(amount) {
+	return {type: 'INCREMENT',amount}
+}
+function decrement(amount) {
+	return {type: 'DECREMENT',amount}
+}
+function reset() {
+	return{ type: 'RESET'}
+}
+const store = createStore(reducer);
 
 class FormComponent extends Component {
+	constructor(props){
+		super(props);
+	}
+	componentDidMount() {
+		store.subscribe(() => {
+			this.forceUpdate();
+		})
+	}
 	render() {
 		return (
 			<div className="container-fluid row justify-content-center orderFormDiv">

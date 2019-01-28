@@ -7,6 +7,7 @@ import '../node_modules/react-owl-carousel2/src/owl.carousel.css'
 import '../node_modules/react-owl-carousel2/src/owl.theme.default.css'
 import FormComponent from './components/FormComponent'
 import CarList from './components/CarLIst'
+import Dojo from "./components/dojoComponent";
 const options = {
 	rewind: true,
 	autoplay: true,
@@ -65,6 +66,7 @@ class App extends Component {
 				    <h3>Details:</h3>
 
 			    </div>
+			    <Dojo/>
 		    </div>
 
 	    </div>
